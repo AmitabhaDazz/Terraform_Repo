@@ -13,6 +13,6 @@ data "aws_ami" "ad_ami" {
 }
 resource "aws_instance" "awsec2" {
   ami           = data.aws_ami.ad_ami.id
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
 }
 
